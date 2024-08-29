@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-flickfilder/static/css/main.dcb72374.css",
+    "main.js": "/react-flickfilder/static/js/main.d938871f.js",
+    "index.html": "/react-flickfilder/index.html",
+    "main.dcb72374.css.map": "/react-flickfilder/static/css/main.dcb72374.css.map",
+    "main.d938871f.js.map": "/react-flickfilder/static/js/main.d938871f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dcb72374.css",
+    "static/js/main.d938871f.js"
+  ]
+}
