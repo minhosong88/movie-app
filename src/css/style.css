@@ -1,0 +1,196 @@
+body {
+  background-color: #141414;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: #e50914; 
+  font-size: 4rem;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 10px 5px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+div .year {
+  margin: 3px 10px;
+  font-size: 1rem;
+}
+
+.detail {
+  font-size: 2rem;
+}
+
+.rating-container {
+  display: flex;
+  align-items: start; 
+  justify-content: start; 
+  margin: 20px 20px; 
+  color: #e50914; 
+  font-size: 1.2rem; 
+  font-weight: bold; 
+}
+
+.range {
+  width: 300px; 
+  margin-left: 20px; 
+  -webkit-appearance: none; 
+  appearance: none; 
+  background-color: #333; 
+  border-radius: 5px; 
+  outline: none; 
+  height: 8px; 
+  cursor: pointer; 
+}
+
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none; 
+  width: 20px; 
+  height: 20px; 
+  background-color: #e50914; 
+  border-radius: 50%; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
+}
+
+.range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background-color: #e50914;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.range::-webkit-slider-thumb:hover {
+  background-color: #f40612;
+}
+
+.range::-moz-range-thumb:hover {
+  background-color: #f40612;
+}
+
+
+.movies-scroll-container {
+  overflow-x: auto;
+  white-space: nowrap; 
+  padding: 20px;
+}
+
+.movies-container {
+  display: flex; 
+  gap: 20px; 
+  flex-wrap: nowrap;
+}
+
+.movie-card {
+  background-color: #222222; 
+  border-radius: 8px;
+  overflow: hidden;
+  width: 250px; 
+  flex:0 0 auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movie-card img {
+  width: 100%;
+  display: block;
+}
+
+.movie-card:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.movie-card {
+  color: whitesmoke; 
+  text-decoration: none; 
+}
+
+.detail-container {
+  max-width: 600px;
+  margin: 40px auto; /* Center the container horizontally */
+  padding: 20px;
+  background-color: #222222; /* Dark background for the detail container */
+  border-radius: 8px; /* Rounded corners for the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center align text */
+}
+
+.detail-container h2 {
+  font-size: 2rem;
+  color: #e50914; /* Netflix red for the title */
+  margin-bottom: 20px;
+}
+
+.detail-container img {
+  width: 100%;
+  max-width: 400px; /* Limit the width of the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+  margin-bottom: 20px;
+}
+
+.detail-container ul {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center the genres horizontally */
+  gap: 10px; /* Space between genre items */
+  margin-bottom: 20px; /* Space below the genres */
+}
+
+.detail-container ul li {
+  background-color: #333333; /* Slightly lighter background for genres */
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners for genre tags */
+  font-size: 1rem; /* Slightly smaller font size */
+}
+
+.detail-container div {
+  margin-bottom: 20px; /* Space below the year and button */
+}
+
+.detail-container span {
+  font-size: 1.2rem;
+  margin-right: 20px; /* Space between the year and the button */
+}
+
+.detail-container button {
+  background-color: #e50914; /* Netflix red for the button */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners for the button */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.detail-container button:hover {
+  background-color: #f40612; /* Brighter red on hover */
+}
+
+.detail-container a {
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.detail-container p {
+  font-size: 1.5rem;
+  color: #dddddd; /* Slightly lighter color for the summary text */
+  line-height: 1.5; /* Improve readability */
+  text-align: start;
+}

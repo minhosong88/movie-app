@@ -21,16 +21,16 @@ function Detail() {
     return (
         <div>
             {loading ? <h1>Loading</h1> : (
-                <div>
+                <div className="detail-container">
                     <h2>{detail.title}</h2>
                     <img src={detail.medium_cover_image} alt={detail.title} />
+                    <div className="detail">{detail.year}</div>
                     <ul>
                         {detail.genres && detail.genres.map((genre, index) => (
                             <li key={index}>{genre}</li>
                         ))}
                     </ul>
                     <div>
-                        <span>{detail.year}</span>
                         <button><a href={detail.url}>Watch</a></button>
                     </div>
                     <p>{summary ? summary:"No summary available"}</p>

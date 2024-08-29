@@ -4,23 +4,26 @@ import {Link} from "react-router-dom";
 
 function Movie({ coverImg, title, summary, year, genres, id }) {
     return (
-        <div>
-            <h2>
-                <Link
-                    to={{ pathname: `/movie/${id}` }}
-                    state= {{ movie: {summary} }}>
-                    {title}
-                </Link>
-            </h2>
 
+        <Link
+                to={{ pathname: `/movie/${id}` }}
+                state={{ movie: { summary } }}
+                className="movie-card"
+        >
+            <h2>{title}</h2>
             <img src={coverImg} alt={title} />
-            <div>{year}</div>
-            <ul>
-                {genres && genres.map((genre, index) => (
-                    <li key={index}>{genre}</li>
-                ))}
-            </ul>
-        </div>
+            <div className="movie-info">
+                <div className="year">{year}</div>
+                <ul>
+                    {genres && genres.map((genre, index) => (
+                        <li key={index}>{genre}</li>
+                    ))}
+                </ul>
+            </div>
+        </Link>
+
+
+
         
     );
 }

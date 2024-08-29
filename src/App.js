@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 import Home from "./routes/Home"
 import Detail from "./routes/Detail"
+import "./css/style.css"
 
 function App() {
   return <Router>
