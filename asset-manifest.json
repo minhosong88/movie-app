@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react-flickfilder/static/css/main.dcb72374.css",
-    "main.js": "/react-flickfilder/static/js/main.d938871f.js",
-    "index.html": "/react-flickfilder/index.html",
-    "main.dcb72374.css.map": "/react-flickfilder/static/css/main.dcb72374.css.map",
-    "main.d938871f.js.map": "/react-flickfilder/static/js/main.d938871f.js.map"
+    "main.css": "/react-flickfinder/static/css/main.dcb72374.css",
+    "main.js": "/react-flickfinder/static/js/main.f1ea9067.js",
+    "index.html": "/react-flickfinder/index.html",
+    "main.dcb72374.css.map": "/react-flickfinder/static/css/main.dcb72374.css.map",
+    "main.f1ea9067.js.map": "/react-flickfinder/static/js/main.f1ea9067.js.map"
   },
   "entrypoints": [
     "static/css/main.dcb72374.css",
-    "static/js/main.d938871f.js"
+    "static/js/main.f1ea9067.js"
   ]
 }
